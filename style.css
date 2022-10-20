@@ -21,7 +21,13 @@ div{
   box-sizing: border-box;
   float: left;
 }
-.monopoly-card{
+.front{
+  width: 572px;
+  height: 880px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.back{
   width: 572px;
   height: 880px;
   border-radius: 20px;
@@ -100,4 +106,38 @@ span{
   width: 572px;
   text-align: center;
   font-size: 22px;
+}
+.red-box{
+  width: 472px;
+  height: 795px;
+  margin: 35px 50px 0px 50px;
+  background-color: #C70000;
+  color: white;
+}
+.little-white-box{
+  border: 4px solid;
+  height: 290px;
+  margin: 12px 12px 0px 12px;
+  width: 448px;
+  text-align: center;
+  padding-top: 75px;
+}
+.big-white-box{
+  border: 4px solid;
+  height: 324px;
+  width: 448px;
+  margin: 0px 12px 12px 12px;
+}
+.mortgage-title{
+  font-size: 70px;
+}
+.back-text-box{
+  padding-top: 32px;
+  height: 156px;
+  width: 472px;
+  text-align: center;
+  font-size: 35px;
+}
+.back-bottom-text-top{
+  border: 1px;
 }
