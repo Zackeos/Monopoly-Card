@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <link href="https://www.dafontfree.net/embed/a29ibGVuei1zZXJpYWwtbGlnaHQtcmVndWxhciZkYXRhLzM1L2svMTMyOTQ3L2tvYmxlbnotc2VyaWFsLWxpZ2h0LXJlZ3VsYXIudHRm" rel="stylesheet" type="text/css"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+
+
+
+
+  
+  <div id="app">
+    <div id="all-cards">
+      <div class="monopoly-card" v-for="place,i in places">
+        <div class="large-inner-box">
+          <div class="name-box" :style="getColour(i)">
+            <span>TITLE DEED</span><br>
+            <span id="main-name"><b>{{places[i]["name"]}}</b></span><br>
+            <span>({{places[i]["country"]}})</span>
+          </div>
+          <div class="houses-box">
+            <br><span>RENT ON EMPTY LAND</span><br>
+            <span>&nbsp&nbsp&nbsp,,&nbsp&nbsp&nbsp&nbspwith 1 house</span><br>
+            <span>&nbsp&nbsp&nbsp,,&nbsp&nbsp&nbsp&nbspwith 2 houses</span><br>
+            <span>&nbsp&nbsp&nbsp,,&nbsp&nbsp&nbsp&nbspwith 3 houses</span><br>
+            <span>&nbsp&nbsp&nbsp,,&nbsp&nbsp&nbsp&nbspwith 4 houses</span><br>
+            <span>RENT WITH HOTEL</span><br>
+          </div>
+          <div class="prices-box">
+            <span><b>ECU&nbsp</b></span><br>
+            <span class="price" id="empty">{{numberformat(places[i]["empty"])}}</span><br>
+            <span class="price" id="house1">{{numberformat(places[i]["1-rent"])}}</span><br>
+            <span class="price" id="house2">{{numberformat(places[i]["2-rent"])}}</span><br>
+            <span class="price" id="house3">{{numberformat(places[i]["3-rent"])}}</span><br>
+            <span class="price" id="house4">{{numberformat(places[i]["4-rent"])}}</span><br>
+            <span class="price" id="hotel">{{numberformat(places[i]["hotel-rent"])}}</span>
+          </div>
+        </div>
+        <div class="large-text-box">
+          <span>If a player owns<b>&nbspall&nbsp</b>the sites of any<br>
+            colour group, the rent is<b>&nbspdoubled&nbsp</b>on<br>
+            <b>unimproved&nbsp</b>sites in that group.
+          </span>
+        </div>
+        <div class="small-inner-box">
+          <div class="left-small-inner-box">
+            <span>
+              HOUSES COST<br>
+              HOTELS COST<br>
+              <br>
+              MORTGAGE VALUE<br>
+              TO BUY
+            </span>
+          </div>
+          <div class="right-small-inner-box">
+            <span class="price">{{numberformat(places[i]["house-cost"])}}</span><br>
+            <span class="price">{{numberformat(places[i]["hotel-cost"])}} plus</span><br>
+            <span class="price">4 houses</span><br>
+            <span class="price">{{numberformat(places[i]["mortgage"])}}</span><br>
+            <span class="price">{{numberformat(places[i]["cost"])}}</span>
+          </div>
+        </div>
+        <div class="copyright-text">
+          <span>© 1991 Tonka Corporation, All rights reserved</span>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    
+
+
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
