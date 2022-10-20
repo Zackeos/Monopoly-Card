@@ -127,6 +127,7 @@ span{
   height: 324px;
   width: 448px;
   margin: 0px 12px 12px 12px;
+  text-align: center;
 }
 .mortgage-title{
   font-size: 70px;
@@ -139,5 +140,22 @@ span{
   font-size: 35px;
 }
 .back-bottom-text-top{
-  border: 1px;
+  height: 220px;
+  width: 448px;
+  font-size: 35px;
+}
+.back-bottom-text-bottom{
+  height: 90px;
+  width: 448px;
+  font-size: 25px;
+}
+.back-bold{
+  font-weight: 300;
+}
+.extra-space{
+  font-size: 20px;
+  line-height: 1px;
+}
+.main-name-extra{
+  font-size: 30px;
 }
